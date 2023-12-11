@@ -3,7 +3,7 @@ let month = document.querySelector('.month');
 function getCurrentMonthDays() {
     const today = new Date();
     const year = today.getFullYear();
-    const month = today.getMonth(); // Текущий месяц (январь - 0, февраль - 1, и так далее)
+    const month = today.getMonth(); 
   
     const daysInMonth = new Date(year, month + 1, 0).getDate();
     return daysInMonth;
@@ -19,7 +19,7 @@ function getCurrentMonthDays() {
   changeMonthDays()
 
 
-  //смотри сколько дней прошло с начала месяца , всем дня которые уже были доется класс pastDay и отключается возможность кликать на день
+  //смотрим сколько дней прошло с начала месяца , всем дня которые уже были добавляется класс pastDay и отключается возможность кликать на день
   function getTodayDate() {
     const now = new Date();
     const day = now.getDate();

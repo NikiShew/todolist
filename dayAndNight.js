@@ -4,7 +4,7 @@ let content = document.querySelector(".content");
 let day = document.querySelectorAll('.day');
 let addNote = document.querySelector(".addNotes");
 
-//добавляем класс для ночной темы 
+
 dayNight.addEventListener("click", () => {
     addNight(document.body)
     addNight(content);

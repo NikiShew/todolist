@@ -33,7 +33,7 @@ function addNote() {
 
   if (activeDay) {
     let dayId = activeDay.getAttribute("data-id");
-    let uniqueKey = `${dayId}_note_${Date.now()}`; // Создаем уникальный ключ
+    let uniqueKey = `${dayId}_note_${Date.now()}`; 
 
     let block = document.createElement("div");
     let text = document.createElement("h3");
@@ -43,7 +43,7 @@ function addNote() {
 
     text.innerText = noteText;
 
-    localStorage.setItem(uniqueKey, noteText); // Используем уникальный ключ
+    localStorage.setItem(uniqueKey, noteText); 
 
     block.appendChild(text);
     block.appendChild(deleteBlock);
@@ -55,7 +55,7 @@ function addNote() {
     deleteBlock.addEventListener("click", function(event) {
       event.stopPropagation();
       noteContainer.removeChild(block);
-      localStorage.removeItem(uniqueKey); // Удаляем по уникальному ключу
+      localStorage.removeItem(uniqueKey); 
     });
   }
 
@@ -105,7 +105,7 @@ window.addEventListener('load', function() {
   dayElements.forEach(function(day) {
     const dayId = day.getAttribute("data-id");
 
-    // Проходим по всем записям в localStorage
+  
     for (let i = 0; i < localStorage.length; i++) {
       const key = localStorage.key(i);
       if (key.startsWith(`${dayId}_note_`)) {
@@ -118,5 +118,5 @@ window.addEventListener('load', function() {
   });
 });
 
-/// ----- 
+
 

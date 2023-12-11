@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.scss">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <title>Todo list</title>
+  </head>
+  <body>
+    <div class="fullscreen">
+      <h1 class="title">tODO LISt</h1>
+      <h4 class="scrollToButton">вниз</h4>
+
+      <div class="dayOrNight">
+        <img src="./public/free-icon-sun-rays-3385807.png" alt="" class="sun">
+        <div class="lbl" >
+          <input class="dayNight" type="checkbox" id="switch" /><label for="switch">Toggle</label>
+        </div>
+        <img src="./public/darkMoon.png" alt="" class="moon">
+      </div>
+  </div>
+  <div class="content">
+    <div class="button-month">
+      <button class="weekButton calButton">На неделю</button>
+      <button class="monthButton calButton activeCalButton">На месяц</button>
+
+
+    </div>
+      <div class="today-data"></div>
+      <div class="calendarNames">
+        <div class="dayName">Понедельник</div>
+        <div class="dayName">Вторник</div>
+        <div class="dayName">Среда</div>
+        <div class="dayName">Четверг</div>
+        <div class="dayName">Пятница</div>
+        <div class="dayName">Суботта</div>
+        <div class="dayName">Воскресение</div>
+      </div>
+      <div class="calendar month">
+        <!-- <div class="lastMonth day">
+          <div class="number"></div>
+          <div class="notes"></div>
+        </div> -->
+        <div class="day" data-id="1">
+          <div class="number">1</div>
+          <div class="notes"></div>
+        </div>
+        <div class="day" data-id="2">
+          <div class="number">2</div>
+          <div class="notes"></div>
+        </div>
+        <div class="day" data-id="3">
+          <div class="number">3</div>
+          <div class="notes"></div>
+        </div>
+        <div class="day" data-id="4">
+          <div class="number">4</div>
+          <div class="notes"></div>
+        </div>
+        <div class="day" data-id="5">
+          <div class="number">5</div>
+          <div class="notes"></div>
+        </div>
+        <div class="day" data-id="6">
+          <div class="number">6</div>
+          <div class="notes"></div>
+        </div>
+        <div class="day" data-id="7">
+          <div class="number">7</div>
+          <div class="notes"></div>
+        </div>
+        <div class="day" data-id="8">
+          <div class="number">8</div>
+          <div class="notes"></div>
+        </div>
+        <div class="day" data-id="9">
+          <div class="number">9</div>
+          <div class="notes"></div>
+        </div>
+        <div class="day" data-id="10">
+          <div class="number">10</div>
+          <div class="notes"></div>
+        </div>
+        <div class="day" data-id="11">
+          <div class="number">11</div>
+          <div class="notes"></div>
+        </div>
+        <div class="day" data-id="12">
+          <div class="number">12</div>
+          <div class="notes"></div>
+        </div>
+        <div class="day" data-id="13">
+          <div class="number">13</div>
+          <div class="notes"></div>
+        </div>
+        <div class="day" data-id="14">
+          <div class="number">14</div>
+          <div class="notes"></div>
+        </div>
+        <div class="day" data-id="15">
+          <div class="number">15</div>
+          <div class="notes"></div>
+        </div>
+        <div class="day" data-id="16">
+          <div class="number">16</div>
+          <div class="notes"></div>
+        </div>
+        <div class="day" data-id="17">
+          <div class="number">17</div>
+          <div class="notes"></div>
+        </div>
+        <div class="day" data-id="18">
+          <div class="number">18</div>
+          <div class="notes"></div>
+        </div>
+        <div class="day" data-id="19">
+          <div class="number">19</div>
+          <div class="notes"></div>
+        </div>
+        <div class="day" data-id="20">
+          <div class="number">20</div>
+          <div class="notes"></div>
+        </div>
+        <div class="day" data-id="21">
+          <div class="number">21</div>
+          <div class="notes"></div>
+        </div>
+        <div class="day" data-id="22">
+          <div class="number">22</div>
+          <div class="notes"></div>
+        </div>
+        <div class="day" data-id="23">
+          <div class="number">23</div>
+          <div class="notes"></div>
+        </div>
+        <div class="day" data-id="24">
+          <div class="number">24</div>
+          <div class="notes"></div>
+        </div>
+        <div class="day" data-id="25">
+          <div class="number">25</div>
+          <div class="notes"></div>
+        </div>
+        <div class="day" data-id="26">
+          <div class="number">26</div>
+          <div class="notes"></div>
+        </div>
+        <div class="day" data-id="27">
+          <div class="number">27</div>
+          <div class="notes"></div>
+        </div>
+        <div class="day" data-id="28">
+          <div class="number">28</div>
+          <div class="notes"></div>
+        </div>
+        <div class="day" data-id="29">
+          <div class="number">29</div>
+          <div class="notes"></div>
+        </div>
+        <div class="day" data-id="30">
+          <div class="number">30</div>
+          <div class="notes"></div>
+        </div>
+        <div class="lastDay day" data-id="31">
+          <div class="number">31</div>
+          <div class="notes"></div>
+        </div>
+        <!-- Добавьте другие дни календаря -->
+      </div>
+
+      <div class="calendar week hidden">
+        <div class="day weekDay"  data-id="32">
+          <div class="number">1</div>
+          <div class="notes"></div>
+        </div>
+        <div class="day weekDay" data-id="33">
+          <div class="number">2</div>
+          <div class="notes"></div>
+        </div>
+        <div class="day weekDay" data-id="34">
+          <div class="number">3</div>
+          <div class="notes"></div>
+        </div>
+        <div class="day weekDay" data-id="35">
+          <div class="number">4</div>
+          <div class="notes"></div>
+        </div>
+        <div class="day weekDay" data-id="36">
+          <div class="number">5</div>
+          <div class="notes"></div>
+        </div>
+        <div class="day weekDay" data-id="37">
+          <div class="number">6</div>
+          <div class="notes"></div>
+        </div>
+        <div class="day weekDay" data-id="38">
+          <div class="number">7</div>
+          <div class="notes"></div>
+        </div>
+      </div>
+
+      <div class="addNotes hidden ">
+        <p>Добавить заметку на этот день</p>
+        <input type="text" class="note" maxlength="20">
+        <button class="addNoteBtn">Добавить</button>
+        <h3 class="closedNotes">X</h3>
+      </div>
+  </div>
+
+
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/changeCalendar.js"></script>
+    <script type="module" src="/getDaysInMonth.js"></script>
+    <script type="module" src="/addNotesOnDay.js"></script>
+    <script type="module" src="/weekDate.js"></script>
+    <script type="module" src="/dayAndNight.js"></script>
+  </body>
+</html>

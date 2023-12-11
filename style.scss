@@ -14,7 +14,7 @@ body, html {
 }
 .scrollToButton {
   position: absolute;
-  bottom: 20px; /* Измените значение в зависимости от вашего желания */
+  bottom: 20px; 
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
@@ -56,9 +56,9 @@ body, html {
 
 .calendar {
   display: grid;
-  grid-template-columns: repeat(7, 1fr); /* Разделите на 5 столбцов для 30 дней (6 дней в каждом столбце) */
-  gap: 5px; /* Опциональный отступ между элементами */
-  width: 100%; /* Установите желаемую ширину календаря */
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px; 
+  width: 100%; 
   height: 100%;
 
   font-family: 'Nunito', sans-serif;
@@ -104,7 +104,7 @@ body, html {
   padding: 10px;
   text-align: center;
   border: 1px solid #ccc;
-  height: 200px; /* Установите фиксированную высоту */
+  height: 200px; 
   overflow-y: auto;
 
   &::-webkit-scrollbar {
@@ -120,7 +120,7 @@ body, html {
 
 .addNotes {
   display: flex;
-  flex-direction: column; /* Это добавит внутренние элементы блока в столбец, сверху вниз */
+  flex-direction: column; 
   justify-content: center;
   align-items: center;
 
@@ -150,14 +150,14 @@ body, html {
   input {
     position: absolute;
     top: 50px;
-    display: block; /* Изменим display на "block", чтобы элементы шли в столбец */
+    display: block;
     height: 40px;
     border-radius: 10px;
     font-size: 17px;
     padding: 0 10px;
     border: none;
     width: 90%;
-    margin: 5px 0; /* Добавим небольшой отступ между элементами */
+    margin: 5px 0; 
   }
   
   .addNoteBtn {
@@ -171,7 +171,7 @@ body, html {
     height: 30px;
     font-size: 17px;
     font-family: 'Nunito', sans-serif;
-    margin: 5px 0; /* Добавим отступ между кнопкой и предыдущим элементом */
+    margin: 5px 0; 
   }
   
   .closedNotes {
